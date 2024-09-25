@@ -17,3 +17,12 @@ def services(request):
 
 def blog(request):
     return render(request, 'myapp/blog.html')
+
+def portfolio(request):
+    return render(request, 'myapp/portfolio.html')
+
+def teams(request):
+    return render(request, 'myapp/teams.html')
+
+def testimonial(request):
+    return render(request, 'myapp/testimonial.html')

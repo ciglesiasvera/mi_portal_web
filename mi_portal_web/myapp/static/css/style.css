@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+nav {
+    text-align: center; /* Centrar el menú */
+}
+
+ul {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Eliminar el padding */
+    margin: 0; /* Eliminar el margen */
+}
+
+li {
+    display: inline; /* Mostrar los elementos de la lista en línea */
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: white; /* Color del texto blanco */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+a:hover {
+    color: red; /* Cambiar a rojo al hacer hover */
+}
+
+a:active {
+    color: blue; /* Cambiar a azul al hacer clic */
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+img {
+    text-align: center;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto; 
+    text-align: center;
+}
+
+button:hover {
+    background-color: darkblue; 
+}
+
+input[type="text"] {
+    width: 20%; 
+    padding: 10px;
+    margin: 10px auto; 
+    display: block; 
+    border: 2px solid #ccc;
+    border-radius: 25px; 
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    border-color: blue; 
+    outline: none;
+}
+ hr {
+    color: white;
+ }

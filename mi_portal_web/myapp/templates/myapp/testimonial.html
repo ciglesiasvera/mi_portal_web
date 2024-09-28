@@ -5,8 +5,23 @@
 {% block content %} 
         <h1>Bienvenidos a Testimonios</h1>
         <p>Esta es la pagina de testimonios</p>
+        <div class="row">
+        {% if testimonial %}
+                {% for testimonio in testimonial %}
+                <div class="card" style="width: 18rem;">
+                        <h5 class="card-title">{{ testimonio.name }}</h5>
+                        <div class="card-body">
+                                <p class="card-text">{{ testimonio.puesto }}</p>
+                                <p class="card-text">{{ testimonio.testimonio }}</p>
+                        </div>
+                </div>
+                {% endfor %}
+                {% else %}
+                <p>No hay testimonios al momento</p>
+        {% endif %}
+        </div>
         <img src="https://www.kametoys.cl/wp-content/uploads/2020/10/121699514_10157570854352344_7656622799319118385_o.jpg" width="30%" alt="Django" style="display: block; margin: 0 auto;">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí">
         <button>Click aquí</button>
-{% endblock content %}
+{% endblock  %}

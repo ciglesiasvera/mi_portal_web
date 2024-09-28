@@ -5,6 +5,18 @@
 {% block content %} 
         <h1>Bienvenidos a Portafolio</h1>
         <p>Esta es la pagina de Portafolio</p>
+        <div class="row">
+                {%for project in projects%}
+                <div class="card" style="width: 18rem;">
+                        <img src="{{ project.image }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                                <h5 class="card-title">{{ project.name }}</h5>
+                                <p class="card-text">{{ project.description }}</p>
+                                <a href="{{ project.url }}" class="btn btn-primary">Visitar el sitio</a>
+                        </div>
+                </div>
+                {% endfor %}
+        </div>
         <img src="https://www.kametoys.cl/wp-content/uploads/2020/10/121699514_10157570854352344_7656622799319118385_o.jpg" width="30%" alt="Django" style="display: block; margin: 0 auto;">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí">
